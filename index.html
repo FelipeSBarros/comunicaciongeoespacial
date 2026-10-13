@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comunicación de datos geoespaciales</title>
+  <meta name="description" content="Charla de Felipe Sodré Mendes Barros en las Primeras Jornadas de Innovación Geoespacial (UTEC, Minas, 15/10/2026).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div id="escenario" aria-hidden="true">
+    <div id="mapa"></div>
+    <div id="visual"></div>
+  </div>
+  <ol id="ciclo" aria-label="El ciclo de un proyecto"></ol>
+  <div id="barra"></div>
+  <p id="bloque"></p>
+  <main id="pasos"></main>
+  <aside id="notas" hidden></aside>
+  <p id="teclas"><kbd>Espacio</kbd>/<kbd>↓</kbd> avanzar · <kbd>↑</kbd> volver · <kbd>N</kbd> notas · <kbd>F</kbd> pantalla completa</p>
+
+  <script src="vendor/maplibre-gl.js"></script>
+  <script src="vendor/scrollama.min.js"></script>
+  <script src="vendor/qrcode.min.js"></script>
+  <script src="notas.js"></script>
+  <script src="escenas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
