@@ -25,7 +25,7 @@ Después de cambiar cualquier cosa, regenerar `charla.html`: `python3 generar_no
 - `index.html`: la página de trabajo, con los archivos separados.
 - `escenas.js`: una entrada por escena del guion (vista del mapa, marcadores, imagen o gráfico, texto del recuadro). Arriba están `URL_PRESENTACION` y `CONTACTO`, que usan los códigos QR del cierre.
 - `notas.js`: notas del orador, **generadas** desde `../guion.md`. Después de editar el guion, correr `python3 generar_notas.py`.
-- `generar_notas.py` y `construir_unico.py`: generan `notas.js` y `charla.html`. `generar_notas.py` lee `../guion.md`, que está en el repositorio del doctorado y no en este, así que solo funciona desde la copia local del autor.
+- `generar_notas.py` y `construir_unico.py`: generan `notas.js` y `charla.html`. `generar_notas.py` lee `../guion.md`, que está en la carpeta de las Jornadas y no en este repositorio, así que solo funciona desde la copia local del autor.
 - `app.js`: el motor (mapa, scroll, gráficos en SVG, teclado, notas, QR).
 - `estilo.css`: la paleta y las fuentes de la charla 1 (azul marino, turquesa, Barlow Condensed y Poppins).
 - `img/`: las capturas del guion (las más pesadas, convertidas a JPEG) y el logo de UTEC.
@@ -37,7 +37,7 @@ Después de cambiar cualquier cosa, regenerar `charla.html`: `python3 generar_no
 - **Gráficos** (atención, medios, cuadrícula de tierras indígenas): en `app.js`, objeto `GRAFICOS`.
 
 ## Publicar en GitHub Pages
-Esta carpeta es su propio repositorio git (`git@github.com:FelipeSBarros/comunicaciongeoespacial.git`, rama `main`), anidado dentro del repositorio del doctorado, que la ignora en su `.gitignore`.
+Esta carpeta es su propio repositorio git (`git@github.com:FelipeSBarros/comunicaciongeoespacial.git`, rama `main`), anidado dentro de la carpeta de las Jornadas.
 1. Commit y `git push -u origin main` desde esta carpeta.
 2. En GitHub: *Settings → Pages → Deploy from a branch → main / (root)*.
 3. La página queda en <https://felipesbarros.github.io/comunicaciongeoespacial/>, que es la URL que ya está en `URL_PRESENTACION` (`escenas.js`) para el QR del cierre.
